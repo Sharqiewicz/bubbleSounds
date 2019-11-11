@@ -1,0 +1,14 @@
+body{
+    font-family: 'Pacifico', cursive;
+}
+
+.intro{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro img{
+    width: 100px;
+    height: 100px;
+}
