@@ -29,6 +29,7 @@ body{
     height: 200px;
     border-radius: 50%;
     background-color: #4799c2;
+    transition: 1s;
 }
 
 .bubbles{
@@ -43,7 +44,12 @@ body{
 .bubbles div{
     width: 100px;
     height: 100px;
+    transition: 0.5s;
     flex: 1;
+}
+.bubbles div:hover{
+    cursor: pointer;
+    transform: scaleY(1.2);
 }
 
 .bubble1{
@@ -63,4 +69,26 @@ body{
 }
 .bubble6{
     background: #F9F871;
+}
+
+.sentbb{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+
+    z-index: -2;
+}
+
+@keyframes sent{
+    0%{
+        left: 50%;
+        bottom: 15%;
+        transform: translateX(-50%);
+    }
+    100%{
+        left: 50%;
+        bottom: 50%;
+        transform: translateX(-50%);
+    }
 }
